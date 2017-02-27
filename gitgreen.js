@@ -6,7 +6,7 @@ const lastTime = currentTime - 365 * 24 * 60 * 60;
 
 let runner = setInterval(() => {
   currentTime = currentTime - 86400;
-  fs.write('cheat.txt', currentTime, (err) => {
+  fs.writeFile('cheat.txt', currentTime, (err) => {
     if (err) {
       console.error(err.message);
       clearInterval(runner);
