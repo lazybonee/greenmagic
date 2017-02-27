@@ -24,4 +24,4 @@ let runner = setInterval(() => {
     clearInterval(runner);
     console.log('finish !! ');
   }
-}, 800);
+}, 10000);
