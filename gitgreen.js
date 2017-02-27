@@ -11,7 +11,7 @@ let runner = setInterval(() => {
       console.error(err.message);
       clearInterval(runner);
     } else {
-      child_process.exec("git add .;GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "' git commit -m 'update'; git push origin master -f;", (err) => {
+      child_process.exec("git add .;GIT_AUTHOR_DATE='" + currentTime + "' GIT_COMMITTER_DATE='" + currentTime + "' git commit -m 'update'; git push -u origin master;", (err) => {
         if (err) {
           console.error(err.message);
         } else {
