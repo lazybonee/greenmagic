@@ -1,7 +1,7 @@
 const child_process = require('child_process');
 const fs = require('fs');
 
-let currentTime = (new Date().getTime() - 100 * 86400).toString().substr(0,10)
+let currentTime = (new Date().getTime() - 200 * 86400).toString().substr(0,10)
 const lastTime = currentTime - 365 * 24 * 60 * 60;
 
 let runner = setInterval(() => {
